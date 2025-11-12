@@ -11,8 +11,7 @@ scrape_configs:
     static_configs:
       - targets: ["uptime-kuma.railway.internal:3001"]
     basic_auth:
-      username: 
-      password: uhc.taz9CQK4hxn9efp
+      password: uk5_S0MMb-GAjfXkaFbR9XS4pTsZVWePdp-E1CIYUk8T
   # - job_name: 'example_api'
   #   scheme: http
   #   static_configs:
