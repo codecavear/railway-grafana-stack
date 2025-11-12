@@ -5,11 +5,11 @@ scrape_configs:
   - job_name: 'prometheus'
     static_configs:
       - targets: ['localhost:9090']
-  - job_name: "uptime-kuma"
+  - job_name: "uptime"
     scrape_interval: 30s
-    metrics_path: "/metrics"
+    scheme: http
     static_configs:
-      - targets: ["uptime-kuma.railway.internal"]
+      - targets: ["uptime-kuma.railway.internal:3001"]
     basic_auth:
       password: uk5_S0MMb-GAjfXkaFbR9XS4pTsZVWePdp-E1CIYUk8T
   # - job_name: 'example_api'
