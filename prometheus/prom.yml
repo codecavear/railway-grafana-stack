@@ -7,9 +7,9 @@ scrape_configs:
       - targets: ['localhost:9090']
   - job_name: "uptime"
     scrape_interval: 30s
-    scheme: http
+    scheme: https
     static_configs:
-      - targets: ["uptime-kuma.railway.internal:3001"]
+      - targets: ["uptime-kuma-monitor.up.railway.app"]
     basic_auth:
       password: uk5_S0MMb-GAjfXkaFbR9XS4pTsZVWePdp-E1CIYUk8T
   # - job_name: 'example_api'
